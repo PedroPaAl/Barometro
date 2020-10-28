@@ -22,12 +22,9 @@ public class ModeloBar {
     public void guardarPresion(Double presion,LocalDateTime fecha) {
 
         lista.add(new ValorPresion(presion,fecha));        
-    }
-    
-    public void preddicion(){
-        
-       
-        
+    }    
+    public void preddicion(){       
+               
     }
 
     public class ValorPresion {

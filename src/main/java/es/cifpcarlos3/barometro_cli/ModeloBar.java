@@ -21,10 +21,11 @@ public class ModeloBar {
     
     public void guardarPresion(Double presion,LocalDateTime fecha) {
 
-        lista.add(new ValorPresion(presion,fecha));        
+        lista.add(new ValorPresion(presion,fecha));
+        lista.get(0).getPresion();
     }    
     public void preddicion(){       
-               
+        
     }
 
     public class ValorPresion {
@@ -33,7 +34,10 @@ public class ModeloBar {
 
         public ValorPresion(Double presion, LocalDateTime fecha) {
             this.presion = presion;
-            this.fecha = fecha;
+            this.fecha = fecha;        
+        }
+        public Double getPresion(){
+            return presion;
         }
     }
 }
